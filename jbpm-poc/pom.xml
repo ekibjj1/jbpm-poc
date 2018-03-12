@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.orange</groupId>
   <artifactId>jbpm-poc</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>jbpm-poc</name>
   <description>Proyecto de ejemplo para la POC</description>
   <repositories>
