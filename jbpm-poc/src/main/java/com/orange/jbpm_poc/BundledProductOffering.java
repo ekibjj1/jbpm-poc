@@ -112,5 +112,3 @@ return new EqualsBuilder().append(id, rhs.id).append(additionalProperties, rhs.a
 }
 
 }
-
-}
