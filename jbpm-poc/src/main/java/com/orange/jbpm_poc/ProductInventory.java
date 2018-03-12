@@ -5,6 +5,12 @@ package com.orange.jbpm_poc;
  */
 
 @javax.persistence.Entity
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"id",
+"href",
+"name"
+})
 public class ProductInventory implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
