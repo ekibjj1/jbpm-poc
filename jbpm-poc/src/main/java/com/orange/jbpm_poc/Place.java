@@ -12,18 +12,15 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
     "href",
-    "name"
+    "role"
 })
-public class BillingAccount {
+public class Place {
 
-    @JsonProperty("id")
-    private String id;
     @JsonProperty("href")
     private String href;
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("role")
+    private String role;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,30 +28,18 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public Place() {
     }
 
     /**
      * 
-     * @param id
-     * @param name
+     * @param role
      * @param href
      */
-    public BillingAccount(String id, String href, String name) {
+    public Place(String href, String role) {
         super();
-        this.id = id;
         this.href = href;
-        this.name = name;
-    }
-
-    @JsonProperty("id")
-    public String getId() {
-        return id;
-    }
-
-    @JsonProperty("id")
-    public void setId(String id) {
-        this.id = id;
+        this.role = role;
     }
 
     @JsonProperty("href")
@@ -67,14 +52,14 @@ public class BillingAccount {
         this.href = href;
     }
 
-    @JsonProperty("name")
-    public String getName() {
-        return name;
+    @JsonProperty("role")
+    public String getRole() {
+        return role;
     }
 
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
+    @JsonProperty("role")
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @JsonAnyGetter

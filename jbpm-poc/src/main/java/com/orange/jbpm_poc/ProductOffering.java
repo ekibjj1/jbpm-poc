@@ -2,6 +2,7 @@
 package com.orange.jbpm_poc;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
@@ -14,16 +15,16 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "id",
     "href",
-    "name"
+    "bundledProductOffering"
 })
-public class BillingAccount {
+public class ProductOffering {
 
     @JsonProperty("id")
     private String id;
     @JsonProperty("href")
     private String href;
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("bundledProductOffering")
+    private List<BundledProductOffering> bundledProductOffering = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,20 +32,20 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public ProductOffering() {
     }
 
     /**
      * 
      * @param id
-     * @param name
+     * @param bundledProductOffering
      * @param href
      */
-    public BillingAccount(String id, String href, String name) {
+    public ProductOffering(String id, String href, List<BundledProductOffering> bundledProductOffering) {
         super();
         this.id = id;
         this.href = href;
-        this.name = name;
+        this.bundledProductOffering = bundledProductOffering;
     }
 
     @JsonProperty("id")
@@ -67,14 +68,14 @@ public class BillingAccount {
         this.href = href;
     }
 
-    @JsonProperty("name")
-    public String getName() {
-        return name;
+    @JsonProperty("bundledProductOffering")
+    public List<BundledProductOffering> getBundledProductOffering() {
+        return bundledProductOffering;
     }
 
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
+    @JsonProperty("bundledProductOffering")
+    public void setBundledProductOffering(List<BundledProductOffering> bundledProductOffering) {
+        this.bundledProductOffering = bundledProductOffering;
     }
 
     @JsonAnyGetter

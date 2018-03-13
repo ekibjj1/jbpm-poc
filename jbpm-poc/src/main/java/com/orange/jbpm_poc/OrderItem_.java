@@ -13,17 +13,14 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "id",
-    "href",
-    "name"
+    "ospExternalId"
 })
-public class BillingAccount {
+public class OrderItem_ {
 
     @JsonProperty("id")
     private String id;
-    @JsonProperty("href")
-    private String href;
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("ospExternalId")
+    private String ospExternalId;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,20 +28,18 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public OrderItem_() {
     }
 
     /**
      * 
+     * @param ospExternalId
      * @param id
-     * @param name
-     * @param href
      */
-    public BillingAccount(String id, String href, String name) {
+    public OrderItem_(String id, String ospExternalId) {
         super();
         this.id = id;
-        this.href = href;
-        this.name = name;
+        this.ospExternalId = ospExternalId;
     }
 
     @JsonProperty("id")
@@ -57,24 +52,14 @@ public class BillingAccount {
         this.id = id;
     }
 
-    @JsonProperty("href")
-    public String getHref() {
-        return href;
+    @JsonProperty("ospExternalId")
+    public String getOspExternalId() {
+        return ospExternalId;
     }
 
-    @JsonProperty("href")
-    public void setHref(String href) {
-        this.href = href;
-    }
-
-    @JsonProperty("name")
-    public String getName() {
-        return name;
-    }
-
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
+    @JsonProperty("ospExternalId")
+    public void setOspExternalId(String ospExternalId) {
+        this.ospExternalId = ospExternalId;
     }
 
     @JsonAnyGetter

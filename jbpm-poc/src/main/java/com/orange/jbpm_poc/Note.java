@@ -12,18 +12,18 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "href",
-    "name"
+    "text",
+    "date",
+    "author"
 })
-public class BillingAccount {
+public class Note {
 
-    @JsonProperty("id")
-    private String id;
-    @JsonProperty("href")
-    private String href;
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("text")
+    private String text;
+    @JsonProperty("date")
+    private String date;
+    @JsonProperty("author")
+    private String author;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,50 +31,50 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public Note() {
     }
 
     /**
      * 
-     * @param id
-     * @param name
-     * @param href
+     * @param author
+     * @param text
+     * @param date
      */
-    public BillingAccount(String id, String href, String name) {
+    public Note(String text, String date, String author) {
         super();
-        this.id = id;
-        this.href = href;
-        this.name = name;
+        this.text = text;
+        this.date = date;
+        this.author = author;
     }
 
-    @JsonProperty("id")
-    public String getId() {
-        return id;
+    @JsonProperty("text")
+    public String getText() {
+        return text;
     }
 
-    @JsonProperty("id")
-    public void setId(String id) {
-        this.id = id;
+    @JsonProperty("text")
+    public void setText(String text) {
+        this.text = text;
     }
 
-    @JsonProperty("href")
-    public String getHref() {
-        return href;
+    @JsonProperty("date")
+    public String getDate() {
+        return date;
     }
 
-    @JsonProperty("href")
-    public void setHref(String href) {
-        this.href = href;
+    @JsonProperty("date")
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    @JsonProperty("name")
-    public String getName() {
-        return name;
+    @JsonProperty("author")
+    public String getAuthor() {
+        return author;
     }
 
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
+    @JsonProperty("author")
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     @JsonAnyGetter

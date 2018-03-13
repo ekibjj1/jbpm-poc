@@ -12,18 +12,15 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "href",
-    "name"
+    "type",
+    "orderItem"
 })
-public class BillingAccount {
+public class OrderItemRelationship {
 
-    @JsonProperty("id")
-    private String id;
-    @JsonProperty("href")
-    private String href;
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("type")
+    private String type;
+    @JsonProperty("orderItem")
+    private OrderItem_ orderItem;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,50 +28,38 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public OrderItemRelationship() {
     }
 
     /**
      * 
-     * @param id
-     * @param name
-     * @param href
+     * @param orderItem
+     * @param type
      */
-    public BillingAccount(String id, String href, String name) {
+    public OrderItemRelationship(String type, OrderItem_ orderItem) {
         super();
-        this.id = id;
-        this.href = href;
-        this.name = name;
+        this.type = type;
+        this.orderItem = orderItem;
     }
 
-    @JsonProperty("id")
-    public String getId() {
-        return id;
+    @JsonProperty("type")
+    public String getType() {
+        return type;
     }
 
-    @JsonProperty("id")
-    public void setId(String id) {
-        this.id = id;
+    @JsonProperty("type")
+    public void setType(String type) {
+        this.type = type;
     }
 
-    @JsonProperty("href")
-    public String getHref() {
-        return href;
+    @JsonProperty("orderItem")
+    public OrderItem_ getOrderItem() {
+        return orderItem;
     }
 
-    @JsonProperty("href")
-    public void setHref(String href) {
-        this.href = href;
-    }
-
-    @JsonProperty("name")
-    public String getName() {
-        return name;
-    }
-
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
+    @JsonProperty("orderItem")
+    public void setOrderItem(OrderItem_ orderItem) {
+        this.orderItem = orderItem;
     }
 
     @JsonAnyGetter

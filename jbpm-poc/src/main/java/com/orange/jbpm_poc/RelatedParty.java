@@ -14,9 +14,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "id",
     "href",
-    "name"
+    "name",
+    "role"
 })
-public class BillingAccount {
+public class RelatedParty {
 
     @JsonProperty("id")
     private String id;
@@ -24,6 +25,8 @@ public class BillingAccount {
     private String href;
     @JsonProperty("name")
     private String name;
+    @JsonProperty("role")
+    private String role;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,20 +34,22 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public RelatedParty() {
     }
 
     /**
      * 
      * @param id
      * @param name
+     * @param role
      * @param href
      */
-    public BillingAccount(String id, String href, String name) {
+    public RelatedParty(String id, String href, String name, String role) {
         super();
         this.id = id;
         this.href = href;
         this.name = name;
+        this.role = role;
     }
 
     @JsonProperty("id")
@@ -75,6 +80,16 @@ public class BillingAccount {
     @JsonProperty("name")
     public void setName(String name) {
         this.name = name;
+    }
+
+    @JsonProperty("role")
+    public String getRole() {
+        return role;
+    }
+
+    @JsonProperty("role")
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @JsonAnyGetter

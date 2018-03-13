@@ -13,17 +13,14 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "id",
-    "href",
-    "name"
+    "href"
 })
-public class BillingAccount {
+public class Product_ {
 
     @JsonProperty("id")
     private String id;
     @JsonProperty("href")
     private String href;
-    @JsonProperty("name")
-    private String name;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,20 +28,18 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public Product_() {
     }
 
     /**
      * 
      * @param id
-     * @param name
      * @param href
      */
-    public BillingAccount(String id, String href, String name) {
+    public Product_(String id, String href) {
         super();
         this.id = id;
         this.href = href;
-        this.name = name;
     }
 
     @JsonProperty("id")
@@ -65,16 +60,6 @@ public class BillingAccount {
     @JsonProperty("href")
     public void setHref(String href) {
         this.href = href;
-    }
-
-    @JsonProperty("name")
-    public String getName() {
-        return name;
-    }
-
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
     }
 
     @JsonAnyGetter

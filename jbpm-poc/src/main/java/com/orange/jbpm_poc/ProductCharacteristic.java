@@ -12,18 +12,15 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "id",
-    "href",
-    "name"
+    "name",
+    "value"
 })
-public class BillingAccount {
+public class ProductCharacteristic {
 
-    @JsonProperty("id")
-    private String id;
-    @JsonProperty("href")
-    private String href;
     @JsonProperty("name")
     private String name;
+    @JsonProperty("value")
+    private String value;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -31,40 +28,18 @@ public class BillingAccount {
      * No args constructor for use in serialization
      * 
      */
-    public BillingAccount() {
+    public ProductCharacteristic() {
     }
 
     /**
      * 
-     * @param id
      * @param name
-     * @param href
+     * @param value
      */
-    public BillingAccount(String id, String href, String name) {
+    public ProductCharacteristic(String name, String value) {
         super();
-        this.id = id;
-        this.href = href;
         this.name = name;
-    }
-
-    @JsonProperty("id")
-    public String getId() {
-        return id;
-    }
-
-    @JsonProperty("id")
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    @JsonProperty("href")
-    public String getHref() {
-        return href;
-    }
-
-    @JsonProperty("href")
-    public void setHref(String href) {
-        this.href = href;
+        this.value = value;
     }
 
     @JsonProperty("name")
@@ -75,6 +50,16 @@ public class BillingAccount {
     @JsonProperty("name")
     public void setName(String name) {
         this.name = name;
+    }
+
+    @JsonProperty("value")
+    public String getValue() {
+        return value;
+    }
+
+    @JsonProperty("value")
+    public void setValue(String value) {
+        this.value = value;
     }
 
     @JsonAnyGetter
