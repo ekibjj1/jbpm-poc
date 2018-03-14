@@ -25,13 +25,14 @@
   <bpmn2:itemDefinition id="__575B6B78-2759-402B-9296-E3B6A5981392_MethodInputXItem" isCollection="false" structureRef="String"/>
   <bpmn2:itemDefinition id="__575B6B78-2759-402B-9296-E3B6A5981392_UrlInputXItem" isCollection="false" structureRef="String"/>
   <bpmn2:itemDefinition id="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" isCollection="false" structureRef="java.lang.Object"/>
+  <bpmn2:itemDefinition id="ItemDefinition_1584" isCollection="false" structureRef="java.lang.String"/>
   <bpmn2:process id="jbpm-poc.Composicion" drools:packageName="com.orange.jbpm_poc" drools:version="1.0" name="Composicion" isExecutable="true">
     <bpmn2:extensionElements>
       <drools:import name="com.orange.jbpm_poc.Channel"/>
       <drools:import name="com.orange.jbpm_poc.Error"/>
       <drools:import name="com.orange.jbpm_poc.BillingAccount"/>
       <drools:import name="com.orange.jbpm_poc.ProductOrderingDTO"/>
-      <drools:global identifier="DTO" type="java.lang.Object"/>
+      <drools:global identifier="DTO" type="java.lang.String"/>
     </bpmn2:extensionElements>
     <bpmn2:property id="productOrderingDTO" itemSubjectRef="_productOrderingDTOItem" name="productOrderingDTO"/>
     <bpmn2:property id="productInventoryDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="productInventoryDTO"/>
@@ -149,7 +150,7 @@
         <bpmn2:dataInput id="DataInput_2" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="DataInput_3" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="DataInput_4" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="DataOutput_1" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="Result2"/>
+        <bpmn2:dataOutput id="DataOutput_1" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="ItemDefinition_1584" name="Result2"/>
         <bpmn2:inputSet id="InputSet_1">
           <bpmn2:dataInputRefs>DataInput_2</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>DataInput_3</bpmn2:dataInputRefs>
