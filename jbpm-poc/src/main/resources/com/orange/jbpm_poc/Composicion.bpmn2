@@ -139,9 +139,9 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_Task_1" bpmnElement="Task_1">
-        <dc:Bounds height="80.0" width="100.0" x="160.0" y="70.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="170.0" y="149.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_7">
-          <dc:Bounds height="17.0" width="55.0" x="182.0" y="101.0"/>
+          <dc:Bounds height="17.0" width="55.0" x="192.0" y="180.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_EndEvent_6" bpmnElement="EndEvent_6">
@@ -152,14 +152,13 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_10" bpmnElement="SequenceFlow_11" sourceElement="_4sTF-CefEeiTrYN15L291A" targetElement="BPMNShape_Task_1">
         <di:waypoint xsi:type="dc:Point" x="75.0" y="239.0"/>
-        <di:waypoint xsi:type="dc:Point" x="75.0" y="110.0"/>
-        <di:waypoint xsi:type="dc:Point" x="160.0" y="110.0"/>
+        <di:waypoint xsi:type="dc:Point" x="75.0" y="189.0"/>
+        <di:waypoint xsi:type="dc:Point" x="170.0" y="189.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_11" bpmnElement="SequenceFlow_12" sourceElement="BPMNShape_Task_1" targetElement="_4sTF-yefEeiTrYN15L291A">
-        <di:waypoint xsi:type="dc:Point" x="260.0" y="110.0"/>
-        <di:waypoint xsi:type="dc:Point" x="325.0" y="110.0"/>
-        <di:waypoint xsi:type="dc:Point" x="325.0" y="115.0"/>
+        <di:waypoint xsi:type="dc:Point" x="220.0" y="149.0"/>
+        <di:waypoint xsi:type="dc:Point" x="220.0" y="115.0"/>
         <di:waypoint xsi:type="dc:Point" x="390.0" y="115.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
