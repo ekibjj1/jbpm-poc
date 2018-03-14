@@ -59,7 +59,7 @@
         <bpmn2:dataInput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputX" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputX" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputX" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result"/>
+        <bpmn2:dataOutput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputX" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="Result"/>
         <bpmn2:inputSet id="_4sSe4iefEeiTrYN15L291A">
           <bpmn2:dataInputRefs>_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:dataInputRefs>
