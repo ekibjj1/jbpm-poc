@@ -97,7 +97,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_3">
         <bpmn2:targetRef>DataInput_3</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_3">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_5">https://10.132.73.198:9061/ms-mdg/v1/getClientMDGRest/NumeroDocumento/sdfsdf/TipoAcceso/MSISDN/Marca/Orange/MSISDN/635004700/OnlyActive/true</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_5">https://AOTLXTEWSB00001.cosmos.es.ftgroup:9061/ms-mdg/v1/getClientMDGRest/NumeroDocumento/sdfsdf/TipoAcceso/MSISDN/Marca/Orange/MSISDN/635004700/OnlyActive/true</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_6">_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
