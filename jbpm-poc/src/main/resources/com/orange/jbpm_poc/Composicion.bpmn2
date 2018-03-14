@@ -34,8 +34,7 @@
           <drools:metaValue><![CDATA[ms-productordering]]></drools:metaValue>
         </drools:metaData>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script>System.out.println(kcontext.getVariable(&quot;Url&quot;));
-System.out.println(Url);</drools:script>
+          <drools:script>System.out.println(kcontext.getVariable(&quot;Url&quot;));</drools:script>
         </drools:onExit-script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_E9451F9E-1A86-4EB5-9CB9-402B3474B4DC</bpmn2:incoming>
