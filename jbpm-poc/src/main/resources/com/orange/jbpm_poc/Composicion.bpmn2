@@ -34,9 +34,9 @@
       <drools:import name="com.orange.jbpm_poc.ProductOrderingDTO"/>
       <drools:global identifier="DTO" type="java.lang.String"/>
     </bpmn2:extensionElements>
-    <bpmn2:property id="productOrderingDTO" itemSubjectRef="_productOrderingDTOItem" name="productOrderingDTO"/>
-    <bpmn2:property id="productInventoryDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="productInventoryDTO"/>
-    <bpmn2:property id="mdgDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="mdgDTO"/>
+    <bpmn2:property id="productOrderingDTO" itemSubjectRef="ItemDefinition_1584" name="productOrderingDTO"/>
+    <bpmn2:property id="productInventoryDTO" itemSubjectRef="ItemDefinition_1584" name="productInventoryDTO"/>
+    <bpmn2:property id="mdgDTO" itemSubjectRef="ItemDefinition_1584" name="mdgDTO"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -60,7 +60,7 @@
         <bpmn2:dataInput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputX" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputX" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputX" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="Result"/>
+        <bpmn2:dataOutput id="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputX" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="ItemDefinition_1584" name="Result"/>
         <bpmn2:inputSet id="_4sSe4iefEeiTrYN15L291A">
           <bpmn2:dataInputRefs>_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:dataInputRefs>
@@ -205,7 +205,7 @@
         <bpmn2:dataInput id="DataInput_6" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="DataInput_7" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="DataInput_8" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="DataOutput_2" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="Result1"/>
+        <bpmn2:dataOutput id="DataOutput_2" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="ItemDefinition_1584" name="Result1"/>
         <bpmn2:inputSet id="InputSet_2">
           <bpmn2:dataInputRefs>DataInput_6</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>DataInput_7</bpmn2:dataInputRefs>
