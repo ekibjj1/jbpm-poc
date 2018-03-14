@@ -90,7 +90,7 @@
       <bpmn2:dataInputAssociation id="_4sSe7CefEeiTrYN15L291A">
         <bpmn2:targetRef>_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4sSe7SefEeiTrYN15L291A">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4sSe7iefEeiTrYN15L291A"><![CDATA[https://aotlxppwsb00001.cosmos.es.ftgroup:9061/ms-productordering/v1/orange/getSummary?customerId=19409257&msisdn=635004700&tipoLinea=POSPAGO&tmCodeDestino=646&tmCodeOrigen=682]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4sSe7iefEeiTrYN15L291A">https://AOTLXTEWSB00001.cosmos.es.ftgroup:9061/ms-productordering/v1/orange/getSummary?customerId=19409257&amp;msisdn=635004700&amp;tipoLinea=POSPAGO&amp;tmCodeDestino=646&amp;tmCodeOrigen=682</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4sSe7yefEeiTrYN15L291A">_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
