@@ -90,7 +90,7 @@
       <bpmn2:dataInputAssociation id="_4sSe7CefEeiTrYN15L291A">
         <bpmn2:targetRef>_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4sSe7SefEeiTrYN15L291A">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4sSe7iefEeiTrYN15L291A">https://AOTLXTEWSB00001.cosmos.es.ftgroup:9061/ms-productordering/v1/orange/getSummary?customerId=19409257&amp;msisdn=635004700&amp;tipoLinea=POSPAGO&amp;tmCodeDestino=646&amp;tmCodeOrigen=682</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4sSe7iefEeiTrYN15L291A">https://aotlxppwsb00001.cosmos.es.ftgroup:9061/ms-productordering/v1/orange/getSummary?customerId=19409257&amp;msisdn=635004700&amp;tipoLinea=POSPAGO&amp;tmCodeDestino=646&amp;tmCodeOrigen=682</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4sSe7yefEeiTrYN15L291A">_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -158,7 +158,7 @@
         <bpmn2:dataInput id="DataInput_2" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="DataInput_3" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="DataInput_4" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="DataOutput_1" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result"/>
+        <bpmn2:dataOutput id="DataOutput_1" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result2"/>
         <bpmn2:inputSet id="InputSet_1">
           <bpmn2:dataInputRefs>DataInput_2</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>DataInput_3</bpmn2:dataInputRefs>
@@ -186,7 +186,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_3">
         <bpmn2:targetRef>DataInput_3</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_3">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_5">https://AOTLXTEWSB00001.cosmos.es.ftgroup:9061/ms-mdg/v1/getClientMDGRest/NumeroDocumento/sdfsdf/TipoAcceso/MSISDN/Marca/Orange/MSISDN/635004700/OnlyActive/true</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_5">https://aotlxppwsb00001.cosmos.es.ftgroup:9061/ms-mdg/v1/getClientMDGRest/NumeroDocumento/sdfsdf/TipoAcceso/MSISDN/Marca/Orange/MSISDN/635004700/OnlyActive/true</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_6">_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -218,7 +218,7 @@
         <bpmn2:dataInput id="DataInput_6" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="DataInput_7" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="DataInput_8" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="DataOutput_2" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result"/>
+        <bpmn2:dataOutput id="DataOutput_2" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result1"/>
         <bpmn2:inputSet id="InputSet_2">
           <bpmn2:dataInputRefs>DataInput_6</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>DataInput_7</bpmn2:dataInputRefs>
@@ -246,7 +246,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_7">
         <bpmn2:targetRef>DataInput_7</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_7">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_13">https://AOTLXTEWSB00001.cosmos.es.ftgroup:9061/ms-productinventory/v1/orange/services/635004700?lineCategory=mobile&amp;onlyActive=true&amp;source=mdw</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_13">https://aotlxppwsb00001.cosmos.es.ftgroup:9061/ms-productinventory/v1/orange/services/635004700?lineCategory=mobile&amp;onlyActive=true&amp;source=mdw</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_14">_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
