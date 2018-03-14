@@ -34,6 +34,8 @@
       <drools:global identifier="DTO" type="java.lang.Object"/>
     </bpmn2:extensionElements>
     <bpmn2:property id="productOrderingDTO" itemSubjectRef="_productOrderingDTOItem" name="productOrderingDTO"/>
+    <bpmn2:property id="productInventoryDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="productInventoryDTO"/>
+    <bpmn2:property id="mdgDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="mdgDTO"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -47,13 +49,8 @@
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[ms-productordering]]></drools:metaValue>
         </drools:metaData>
-        <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script>
-</drools:script>
-        </drools:onExit-script>
-        <drools:onEntry-script>
-          <drools:script></drools:script>
-        </drools:onEntry-script>
+        <drools:onExit-script scriptFormat="http://www.java.com/java"/>
+        <drools:onEntry-script/>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_92BF2A3B-7C6E-4890-A4F4-1893E957CE30</bpmn2:incoming>
       <bpmn2:outgoing>_6D6E154F-91CD-4553-94D3-B101A6085E6A</bpmn2:outgoing>
@@ -144,12 +141,9 @@
     <bpmn2:task id="Task_1" drools:selectable="true" drools:taskName="Rest" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="ms-mdg">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[ms-productordering]]></drools:metaValue>
+          <drools:metaValue><![CDATA[ms-mdg]]></drools:metaValue>
         </drools:metaData>
-        <drools:onExit-script>
-          <drools:script>
-</drools:script>
-        </drools:onExit-script>
+        <drools:onExit-script/>
       </bpmn2:extensionElements>
       <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_3</bpmn2:outgoing>
@@ -158,7 +152,7 @@
         <bpmn2:dataInput id="DataInput_2" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="DataInput_3" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="DataInput_4" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="DataOutput_1" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result2"/>
+        <bpmn2:dataOutput id="DataOutput_1" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="Result2"/>
         <bpmn2:inputSet id="InputSet_1">
           <bpmn2:dataInputRefs>DataInput_2</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>DataInput_3</bpmn2:dataInputRefs>
@@ -199,7 +193,7 @@
       </bpmn2:dataInputAssociation>
       <bpmn2:dataOutputAssociation id="DataOutputAssociation_1">
         <bpmn2:sourceRef>DataOutput_1</bpmn2:sourceRef>
-        <bpmn2:targetRef>productOrderingDTO</bpmn2:targetRef>
+        <bpmn2:targetRef>mdgDTO</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:sequenceFlow id="SequenceFlow_1" drools:priority="1" sourceRef="_79809C82-1894-4ADF-9723-D098C854BA26" targetRef="Task_1"/>
@@ -207,7 +201,7 @@
     <bpmn2:task id="Task_2" drools:selectable="true" drools:taskName="Rest" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="ms-productinventory">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[ms-productordering]]></drools:metaValue>
+          <drools:metaValue><![CDATA[ms-productinventory]]></drools:metaValue>
         </drools:metaData>
         <drools:onExit-script/>
       </bpmn2:extensionElements>
@@ -218,7 +212,7 @@
         <bpmn2:dataInput id="DataInput_6" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ContentTypeInputXItem" name="ContentType"/>
         <bpmn2:dataInput id="DataInput_7" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="DataInput_8" drools:dtype="String" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_MethodInputXItem" name="Method"/>
-        <bpmn2:dataOutput id="DataOutput_2" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__C0F0542F-FBCA-4BD1-9F12-8393B95C93A3_ResultOutputXItem" name="Result1"/>
+        <bpmn2:dataOutput id="DataOutput_2" drools:dtype="com.orange.jbpm_poc.ProductOrderingDTO" itemSubjectRef="__575B6B78-2759-402B-9296-E3B6A5981392_ResultOutputXItem" name="Result1"/>
         <bpmn2:inputSet id="InputSet_2">
           <bpmn2:dataInputRefs>DataInput_6</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>DataInput_7</bpmn2:dataInputRefs>
@@ -259,7 +253,7 @@
       </bpmn2:dataInputAssociation>
       <bpmn2:dataOutputAssociation id="DataOutputAssociation_2">
         <bpmn2:sourceRef>DataOutput_2</bpmn2:sourceRef>
-        <bpmn2:targetRef>productOrderingDTO</bpmn2:targetRef>
+        <bpmn2:targetRef>productInventoryDTO</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
     <bpmn2:sequenceFlow id="SequenceFlow_4" drools:priority="1" sourceRef="_79809C82-1894-4ADF-9723-D098C854BA26" targetRef="Task_2"/>
@@ -269,96 +263,96 @@
     <bpmndi:BPMNPlane id="_4sTF9yefEeiTrYN15L291A" bpmnElement="jbpm-poc.Composicion">
       <bpmndi:BPMNShape id="_4sTF-CefEeiTrYN15L291A" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="30.0" y="244.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_1"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_4sTF-SefEeiTrYN15L291A" bpmnElement="_C0F0542F-FBCA-4BD1-9F12-8393B95C93A3">
         <dc:Bounds height="80.0" width="100.0" x="240.0" y="125.0"/>
-        <bpmndi:BPMNLabel>
+        <bpmndi:BPMNLabel id="BPMNLabel_2">
           <dc:Bounds height="51.0" width="104.0" x="238.0" y="139.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_4sTF-iefEeiTrYN15L291A" bpmnElement="_E1E03CA0-505D-4B51-88D1-4685488B3031">
         <dc:Bounds height="28.0" width="28.0" x="740.0" y="273.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_3"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_4sTF-yefEeiTrYN15L291A" bpmnElement="ScriptTask_1">
         <dc:Bounds height="50.0" width="110.0" x="570.0" y="262.0"/>
-        <bpmndi:BPMNLabel>
+        <bpmndi:BPMNLabel id="BPMNLabel_4">
           <dc:Bounds height="17.0" width="86.0" x="582.0" y="278.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_4sTF_SefEeiTrYN15L291A" bpmnElement="_79809C82-1894-4ADF-9723-D098C854BA26" isMarkerVisible="true">
         <dc:Bounds height="40.0" width="40.0" x="139.0" y="239.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_5"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_4sTF_iefEeiTrYN15L291A" bpmnElement="_DDF869AA-DAE0-4A9B-A20A-9879E3515640" isMarkerVisible="true">
         <dc:Bounds height="40.0" width="40.0" x="468.0" y="267.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_6"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_Task_1" bpmnElement="Task_1">
         <dc:Bounds height="80.0" width="100.0" x="240.0" y="227.0"/>
-        <bpmndi:BPMNLabel>
+        <bpmndi:BPMNLabel id="BPMNLabel_7">
           <dc:Bounds height="17.0" width="55.0" x="262.0" y="258.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_Task_2" bpmnElement="Task_2">
         <dc:Bounds height="80.0" width="113.0" x="238.0" y="329.0"/>
-        <bpmndi:BPMNLabel>
+        <bpmndi:BPMNLabel id="BPMNLabel_8">
           <dc:Bounds height="34.0" width="109.0" x="240.0" y="352.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="_4sTGACefEeiTrYN15L291A" bpmnElement="_E9451F9E-1A86-4EB5-9CB9-402B3474B4DC" sourceElement="_4sTF-CefEeiTrYN15L291A" targetElement="_4sTF_SefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="45.0" y="259.0"/>
         <di:waypoint xsi:type="dc:Point" x="159.0" y="259.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_9"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_4sTGASefEeiTrYN15L291A" bpmnElement="SequenceFlow_2" sourceElement="_4sTF-yefEeiTrYN15L291A" targetElement="_4sTF-iefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="625.0" y="287.0"/>
         <di:waypoint xsi:type="dc:Point" x="754.0" y="287.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_10"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_4sTGAiefEeiTrYN15L291A" bpmnElement="_92BF2A3B-7C6E-4890-A4F4-1893E957CE30" sourceElement="_4sTF_SefEeiTrYN15L291A" targetElement="_4sTF-SefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="159.0" y="239.0"/>
         <di:waypoint xsi:type="dc:Point" x="159.0" y="165.0"/>
         <di:waypoint xsi:type="dc:Point" x="240.0" y="165.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_11"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_4sTGBCefEeiTrYN15L291A" bpmnElement="_6D6E154F-91CD-4553-94D3-B101A6085E6A" sourceElement="_4sTF-SefEeiTrYN15L291A" targetElement="_4sTF_iefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="340.0" y="165.0"/>
         <di:waypoint xsi:type="dc:Point" x="488.0" y="165.0"/>
         <di:waypoint xsi:type="dc:Point" x="488.0" y="267.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_12"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_4sUUEyefEeiTrYN15L291A" bpmnElement="_92529E55-0BAB-4E35-97C5-B0B60A1A26B3" sourceElement="_4sTF_iefEeiTrYN15L291A" targetElement="_4sTF-yefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="488.0" y="287.0"/>
         <di:waypoint xsi:type="dc:Point" x="625.0" y="287.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_13"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="_4sTF_SefEeiTrYN15L291A" targetElement="BPMNShape_Task_1">
         <di:waypoint xsi:type="dc:Point" x="179.0" y="259.0"/>
         <di:waypoint xsi:type="dc:Point" x="209.0" y="259.0"/>
         <di:waypoint xsi:type="dc:Point" x="209.0" y="267.0"/>
         <di:waypoint xsi:type="dc:Point" x="240.0" y="267.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_14"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_3" sourceElement="BPMNShape_Task_1" targetElement="_4sTF_iefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="340.0" y="267.0"/>
         <di:waypoint xsi:type="dc:Point" x="404.0" y="267.0"/>
         <di:waypoint xsi:type="dc:Point" x="404.0" y="287.0"/>
         <di:waypoint xsi:type="dc:Point" x="468.0" y="287.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_15"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_3" bpmnElement="SequenceFlow_4" sourceElement="_4sTF_SefEeiTrYN15L291A" targetElement="BPMNShape_Task_2">
         <di:waypoint xsi:type="dc:Point" x="159.0" y="279.0"/>
         <di:waypoint xsi:type="dc:Point" x="159.0" y="369.0"/>
         <di:waypoint xsi:type="dc:Point" x="238.0" y="369.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_16"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_4" bpmnElement="SequenceFlow_5" sourceElement="BPMNShape_Task_2" targetElement="_4sTF_iefEeiTrYN15L291A">
         <di:waypoint xsi:type="dc:Point" x="351.0" y="369.0"/>
         <di:waypoint xsi:type="dc:Point" x="488.0" y="369.0"/>
         <di:waypoint xsi:type="dc:Point" x="488.0" y="307.0"/>
-        <bpmndi:BPMNLabel/>
+        <bpmndi:BPMNLabel id="BPMNLabel_17"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
