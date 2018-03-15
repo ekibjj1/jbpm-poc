@@ -310,9 +310,9 @@ kcontext.setVariable(&quot;processOutputVar&quot;, processOutputVar);</bpmn2:scr
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_EndEvent_6" bpmnElement="EndEvent_6">
-        <dc:Bounds height="36.0" width="36.0" x="1080.0" y="219.0"/>
+        <dc:Bounds height="36.0" width="36.0" x="1090.0" y="219.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_2">
-          <dc:Bounds height="17.0" width="79.0" x="1059.0" y="255.0"/>
+          <dc:Bounds height="17.0" width="79.0" x="1069.0" y="255.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_Task_4" bpmnElement="Task_3">
@@ -347,8 +347,8 @@ kcontext.setVariable(&quot;processOutputVar&quot;, processOutputVar);</bpmn2:scr
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_15" bpmnElement="SequenceFlow_16" sourceElement="_4sTF-yefEeiTrYN15L291A" targetElement="BPMNShape_EndEvent_6">
         <di:waypoint xsi:type="dc:Point" x="990.0" y="237.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1035.0" y="237.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1080.0" y="237.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1040.0" y="237.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1090.0" y="237.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_6"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="BPMNShape_Task_5" targetElement="BPMNShape_ParallelGateway_2">
