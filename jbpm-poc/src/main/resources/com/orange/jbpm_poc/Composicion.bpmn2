@@ -58,7 +58,7 @@
 processOutputVar.put(&quot;mdgresponse&quot;, mdgDTO);
 processOutputVar.put(&quot;productOrdering&quot;, productOrderingDTO);
 processOutputVar.put(&quot;productInventory&quot;, productInventoryDTO);
-kcontext.setVariable(&quot;processOutputVar&quot;, &quot;processOutputVar&quot;);</bpmn2:script>
+kcontext.setVariable(&quot;processOutputVar&quot;, processOutputVar);</bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:task id="Task_1" drools:selectable="true" drools:taskName="Rest" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="ms-mdg">
       <bpmn2:extensionElements>
