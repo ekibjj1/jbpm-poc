@@ -46,10 +46,10 @@
       </bpmn2:extensionElements>
       <bpmn2:outgoing>SequenceFlow_11</bpmn2:outgoing>
     </bpmn2:startEvent>
-    <bpmn2:scriptTask id="ScriptTask_1" drools:selectable="true" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Script Task 1" scriptFormat="http://www.java.com/java">
+    <bpmn2:scriptTask id="ScriptTask_1" drools:selectable="true" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Tarea Composicion Micros" scriptFormat="http://www.java.com/java">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Script Task 1]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Tarea Composicion Micros]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>SequenceFlow_6</bpmn2:incoming>
@@ -299,7 +299,7 @@ processOutputVar.put(&quot;productInventory&quot;, productInventoryDTO);</bpmn2:
       <bpmndi:BPMNShape id="_4sTF-yefEeiTrYN15L291A" bpmnElement="ScriptTask_1">
         <dc:Bounds height="50.0" width="110.0" x="880.0" y="212.0"/>
         <bpmndi:BPMNLabel id="BPMNLabel_4">
-          <dc:Bounds height="17.0" width="86.0" x="892.0" y="228.0"/>
+          <dc:Bounds height="51.0" width="94.0" x="888.0" y="212.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_Task_1" bpmnElement="Task_1">
